@@ -1,0 +1,5 @@
+- Preserve the uploaded game's module structure and TypeScript compatibility settings when changing the game.
+- Use src/game/world.ts as the shared source of ship geometry, access points, and floor-specific collisions so rendering and movement agree.
+- Mount the game at / with SSR disabled because its Three.js scene and controls depend on browser APIs.
+- Keep multiplayer optional when Supabase is not configured; the solo game remains playable in local mode.
+- Never place Supabase service-role or other privileged keys in browser code, source control, or VITE_ environment variables.

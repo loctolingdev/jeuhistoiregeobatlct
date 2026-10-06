@@ -1,0 +1,15 @@
+project_id = "bordeaux-1750"
+
+[auth]
+enable_signup = true
+enable_anonymous_sign_ins = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+
+[functions.register-scv-user]
+verify_jwt = false
+
+[functions.admin-moderation]
+verify_jwt = true
