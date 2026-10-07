@@ -24,6 +24,10 @@ La clé publishable est la seule clé utilisée par le navigateur. Ne mettez jam
 
 Commandes disponibles : `npm run dev`, `npm run build`, `npm run preview`, `npm test` et `npm run lint`.
 
+## Déploiement rapide sur Netlify
+
+L'archive inclut `netlify.toml` et le plugin officiel TanStack Start pour Netlify. Connecté à Netlify, déposez le ZIP du projet ou son dossier sur Netlify Drop : Netlify exécute `npm run build` et publie `dist/client`. Le jeu démarre en mode local même sans Supabase. Pour activer comptes, sauvegardes, photos et multijoueur en ligne, ajoutez `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` dans les variables d'environnement du site Netlify, puis appliquez les migrations/déployez les fonctions Supabase une fois. Aucun secret serveur ne doit être inclus dans le ZIP.
+
 ## Configurer le projet Supabase externe
 
 Le projet est prévu pour `https://wiconhcbkuuzgsrfgvyp.supabase.co`.
